@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Adding a new Train</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <h2>New Train Details</h2>
+        <form action="addtrainservlet">
+            Train Id : <input type="text" name="tid"><br><br><br>
+            Train Name: <input type="text" name="tname"><br><br><br>
+            Train Type:
+            Express<input type="radio" name="ttype" value="Express">
+            Passenger<input type="radio" name="ttype" value="Passenger">
+            SuperFast<input type="radio" name="ttype" value="SuperFast"><br><br><br>
+            From : <select name ="from">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>                
+            </select><br><br><br>
+            To : <select name ="to">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>                
+            </select><br><br><br>
+            Starting Time:<input type="text" name="stime"><br><br><br>
+            Destination Time:<input type="text" name="dtime"><br><br><br>
+            <input type="submit" value="Add Train">
+        </form>
+    </center>
+    </body>
+</html>
